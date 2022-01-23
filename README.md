@@ -5,6 +5,13 @@ TODO: I pirate this because the original one seems not maintained (So I consider
 And I will try to gracefully transform this entirely into Lua.
 =====
 
+To start from Move mode use this:
+
+```
+vim.keymap.set('n', '<C-e>', function() vim.cmd('WinResizerStartMove') end, NOREF_NOERR_TRUNC)
+```
+
+------------------
 
 Very simple vim plugin for easy resizing of your vim windows.
 
