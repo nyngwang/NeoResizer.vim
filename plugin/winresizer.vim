@@ -224,8 +224,6 @@ fun! s:startResize(commands)
       break
     elseif c == s:codeList['mode']
       if l:commands['mode'] == 'move'
-        let l:commands = s:focusCommands()
-      elseif l:commands['mode'] == 'focus'
         let l:commands = s:tuiResizeCommands()
       else
         let l:commands = s:moveCommands()
